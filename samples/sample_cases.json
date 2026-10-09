@@ -1,0 +1,27 @@
+[
+  {
+    "case": "suspicious_offer",
+    "company_name": "Example Technologies",
+    "recruiter_email": "example.hiring@gmail.com",
+    "job_url": "http://bit.ly/example-job",
+    "job_text": "Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; limited slots.",
+    "expected": ["payment_request", "urgency", "instant_offer", "shortened_url"]
+  },
+  {
+    "case": "ordinary_detailed_posting",
+    "company_name": "Northwind Example",
+    "recruiter_email": "talent@northwind.example",
+    "job_url": "https://careers.northwind.example/jobs/123",
+    "job_text": "Software engineering intern role. Responsibilities include testing APIs and writing Python code. Requirements include basic programming skills.",
+    "expected_risk_level": "Low",
+    "note": "Low means no configured local rule matched, not that the offer is verified."
+  },
+  {
+    "case": "insufficient_details",
+    "company_name": "",
+    "recruiter_email": "",
+    "job_url": "",
+    "job_text": "",
+    "expected_risk_level": "Needs more information"
+  }
+]

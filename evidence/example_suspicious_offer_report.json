@@ -1,0 +1,437 @@
+{
+  "agent_name": "CareerShield AI",
+  "agent_version": "2.0.0",
+  "report_schema_version": "2.0",
+  "schema_version": "2.0",
+  "report_id": "csr_4d9aa5fe2e3c",
+  "generated_at": "2026-10-09T12:30:50Z",
+  "assessment_status": "complete with limitations",
+  "risk_level": "High",
+  "heuristic_score": 74,
+  "score": 74,
+  "score_methodology_version": "1.0",
+  "scoring_method": "Version 1.0 additive deterministic heuristic, capped at 100. Not a probability or fraud verdict.",
+  "verification_status": "local_only",
+  "summary": "High-severity warning signs were found in the supplied details. Pause and verify through an independently located official company channel before taking action.",
+  "confidence": "Limited — supplied details only; external ownership is unverified",
+  "findings": [
+    {
+      "code": "payment_request",
+      "title": "Payment or transfer language",
+      "severity": "high",
+      "evidence_snippet": "Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; li",
+      "evidence": "This passage appears to request money or a payment method. Do not pay until independently confirmed through official company channels. Evidence: Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; li",
+      "explanation": "This passage appears to request money or a payment method. Do not pay until independently confirmed through official company channels.",
+      "tool": "payment_language_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 35,
+      "points": 35,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "urgency",
+      "title": "Urgency or guaranteed-selection wording",
+      "severity": "medium",
+      "evidence_snippet": "interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "evidence": "This wording applies time pressure or suggests guaranteed selection. It needs context and is not proof of fraud. Evidence: interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "explanation": "This wording applies time pressure or suggests guaranteed selection. It needs context and is not proof of fraud.",
+      "tool": "urgency_claim_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 12,
+      "points": 12,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "instant_offer",
+      "title": "Guaranteed selection without an interview",
+      "severity": "medium",
+      "evidence_snippet": "interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "evidence": "Guaranteed selection without an interview warrants review but is not proof of fraud. Evidence: interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "explanation": "Guaranteed selection without an interview warrants review but is not proof of fraud.",
+      "tool": "urgency_claim_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "personal_email",
+      "title": "Personal email provider",
+      "severity": "info",
+      "evidence_snippet": "gmail.com",
+      "evidence": "Personal email can occur in legitimate hiring; this is context only, not proof of fraud. Evidence: gmail.com",
+      "explanation": "Personal email can occur in legitimate hiring; this is context only, not proof of fraud.",
+      "tool": "email_domain_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "non_https",
+      "title": "URL does not use HTTPS",
+      "severity": "low",
+      "evidence_snippet": "http://bit.ly/example-job",
+      "evidence": "This is one caution signal and is not proof of fraud. Verify using the official website. Evidence: http://bit.ly/example-job",
+      "explanation": "This is one caution signal and is not proof of fraud. Verify using the official website.",
+      "tool": "url_structure_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 5,
+      "points": 5,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "shortened_url",
+      "title": "Shortened link hides its destination",
+      "severity": "medium",
+      "evidence_snippet": "bit.ly",
+      "evidence": "Confirm the destination through an independently located company website before opening. Evidence: bit.ly",
+      "explanation": "Confirm the destination through an independently located company website before opening.",
+      "tool": "url_structure_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 10,
+      "points": 10,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "domain_mismatch",
+      "title": "Recruiter email and URL domains differ",
+      "severity": "medium",
+      "evidence_snippet": "Email domain: gmail.com; URL domain: bit.ly.",
+      "evidence": "The supplied domains differ. This is not proof of fraud: hiring platforms and recruitment arrangements can explain it. Verify from the company's official careers page. Evidence: Email domain: gmail.com; URL domain: bit.ly.",
+      "explanation": "The supplied domains differ. This is not proof of fraud: hiring platforms and recruitment arrangements can explain it. Verify from the company's official careers page.",
+      "tool": "domain_consistency_check",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 12,
+      "points": 12,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "limited_role_detail",
+      "title": "Role details are limited",
+      "severity": "info",
+      "evidence_snippet": "Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; limited slots.",
+      "evidence": "Few common responsibility, qualification, or role details were detected. Missing detail lowers coverage; it does not prove fraud. Evidence: Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; limited slots.",
+      "explanation": "Few common responsibility, qualification, or role details were detected. Missing detail lowers coverage; it does not prove fraud.",
+      "tool": "role_completeness_checker",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    }
+  ],
+  "signals": [
+    {
+      "code": "payment_request",
+      "title": "Payment or transfer language",
+      "severity": "high",
+      "evidence_snippet": "Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; li",
+      "evidence": "This passage appears to request money or a payment method. Do not pay until independently confirmed through official company channels. Evidence: Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; li",
+      "explanation": "This passage appears to request money or a payment method. Do not pay until independently confirmed through official company channels.",
+      "tool": "payment_language_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 35,
+      "points": 35,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "urgency",
+      "title": "Urgency or guaranteed-selection wording",
+      "severity": "medium",
+      "evidence_snippet": "interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "evidence": "This wording applies time pressure or suggests guaranteed selection. It needs context and is not proof of fraud. Evidence: interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "explanation": "This wording applies time pressure or suggests guaranteed selection. It needs context and is not proof of fraud.",
+      "tool": "urgency_claim_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 12,
+      "points": 12,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "instant_offer",
+      "title": "Guaranteed selection without an interview",
+      "severity": "medium",
+      "evidence_snippet": "interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "evidence": "Guaranteed selection without an interview warrants review but is not proof of fraud. Evidence: interview. Pay a registration fee immediately to secure the offer. Act now; limi",
+      "explanation": "Guaranteed selection without an interview warrants review but is not proof of fraud.",
+      "tool": "urgency_claim_detector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "personal_email",
+      "title": "Personal email provider",
+      "severity": "info",
+      "evidence_snippet": "gmail.com",
+      "evidence": "Personal email can occur in legitimate hiring; this is context only, not proof of fraud. Evidence: gmail.com",
+      "explanation": "Personal email can occur in legitimate hiring; this is context only, not proof of fraud.",
+      "tool": "email_domain_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "non_https",
+      "title": "URL does not use HTTPS",
+      "severity": "low",
+      "evidence_snippet": "http://bit.ly/example-job",
+      "evidence": "This is one caution signal and is not proof of fraud. Verify using the official website. Evidence: http://bit.ly/example-job",
+      "explanation": "This is one caution signal and is not proof of fraud. Verify using the official website.",
+      "tool": "url_structure_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 5,
+      "points": 5,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "shortened_url",
+      "title": "Shortened link hides its destination",
+      "severity": "medium",
+      "evidence_snippet": "bit.ly",
+      "evidence": "Confirm the destination through an independently located company website before opening. Evidence: bit.ly",
+      "explanation": "Confirm the destination through an independently located company website before opening.",
+      "tool": "url_structure_inspector",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 10,
+      "points": 10,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "domain_mismatch",
+      "title": "Recruiter email and URL domains differ",
+      "severity": "medium",
+      "evidence_snippet": "Email domain: gmail.com; URL domain: bit.ly.",
+      "evidence": "The supplied domains differ. This is not proof of fraud: hiring platforms and recruitment arrangements can explain it. Verify from the company's official careers page. Evidence: Email domain: gmail.com; URL domain: bit.ly.",
+      "explanation": "The supplied domains differ. This is not proof of fraud: hiring platforms and recruitment arrangements can explain it. Verify from the company's official careers page.",
+      "tool": "domain_consistency_check",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 12,
+      "points": 12,
+      "classification": "heuristic_indicator"
+    },
+    {
+      "code": "limited_role_detail",
+      "title": "Role details are limited",
+      "severity": "info",
+      "evidence_snippet": "Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; limited slots.",
+      "evidence": "Few common responsibility, qualification, or role details were detected. Missing detail lowers coverage; it does not prove fraud. Evidence: Guaranteed job selection without interview. Pay a registration fee immediately to secure the offer. Act now; limited slots.",
+      "explanation": "Few common responsibility, qualification, or role details were detected. Missing detail lowers coverage; it does not prove fraud.",
+      "tool": "role_completeness_checker",
+      "provenance": "user_submitted_text",
+      "observed_at": "2026-10-09T12:30:50Z",
+      "score_contribution": 0,
+      "points": 0,
+      "classification": "heuristic_indicator"
+    }
+  ],
+  "sources": [],
+  "tools_used": [
+    {
+      "tool_name": "payment_language_detector",
+      "name": "payment_language_detector",
+      "selection_reason": "Offer text was supplied; check for money-transfer or recruitment-fee language.",
+      "status": "completed",
+      "duration_ms": 10,
+      "result_summary": "2 matching passage(s)",
+      "provider": "local"
+    },
+    {
+      "tool_name": "credential_request_detector",
+      "name": "credential_request_detector",
+      "selection_reason": "Offer text was supplied; check for credentials or authentication codes.",
+      "status": "completed",
+      "duration_ms": 5,
+      "result_summary": "0 matching passage(s)",
+      "provider": "local"
+    },
+    {
+      "tool_name": "urgency_claim_detector",
+      "name": "urgency_claim_detector",
+      "selection_reason": "Offer text was supplied; check for time pressure and guaranteed-selection claims.",
+      "status": "completed",
+      "duration_ms": 3,
+      "result_summary": "4 matching passage(s)",
+      "provider": "local"
+    },
+    {
+      "tool_name": "role_completeness_checker",
+      "name": "role_completeness_checker",
+      "selection_reason": "Offer text was supplied; assess whether role responsibilities and requirements are described.",
+      "status": "completed",
+      "duration_ms": 0,
+      "result_summary": "Structured local inspection completed",
+      "provider": "local"
+    },
+    {
+      "tool_name": "email_domain_inspector",
+      "name": "email_domain_inspector",
+      "selection_reason": "A recruiter email was supplied; inspect syntax and domain type.",
+      "status": "completed",
+      "duration_ms": 1,
+      "result_summary": "Structured local inspection completed",
+      "provider": "local"
+    },
+    {
+      "tool_name": "url_structure_inspector",
+      "name": "url_structure_inspector",
+      "selection_reason": "A job URL was supplied; inspect URL syntax and hostname without fetching it.",
+      "status": "completed",
+      "duration_ms": 0,
+      "result_summary": "Structured local inspection completed",
+      "provider": "local"
+    }
+  ],
+  "checks": [
+    {
+      "tool": "payment_language_detector",
+      "status": "completed",
+      "detail": "2 matching passage(s)"
+    },
+    {
+      "tool": "credential_request_detector",
+      "status": "completed",
+      "detail": "0 matching passage(s)"
+    },
+    {
+      "tool": "urgency_claim_detector",
+      "status": "completed",
+      "detail": "4 matching passage(s)"
+    },
+    {
+      "tool": "role_completeness_checker",
+      "status": "completed",
+      "detail": "Structured local inspection completed"
+    },
+    {
+      "tool": "email_domain_inspector",
+      "status": "completed",
+      "detail": "Structured local inspection completed"
+    },
+    {
+      "tool": "url_structure_inspector",
+      "status": "completed",
+      "detail": "Structured local inspection completed"
+    }
+  ],
+  "coverage": {
+    "available_fields": [
+      "company_name",
+      "recruiter_email",
+      "job_url",
+      "job_text"
+    ],
+    "checks_planned": 6,
+    "checks_completed": 6,
+    "tool_call_budget": 8,
+    "tool_calls_used": 6,
+    "live_search_status": "not_configured"
+  },
+  "counter_evidence": [
+    "No credential request was detected by the local language check; this does not establish safety."
+  ],
+  "contradictions": [],
+  "missing_information": [],
+  "recommended_next_steps": [
+    "Do not pay recruitment fees or share OTPs, passwords, PINs, CVV codes, or bank login details.",
+    "Find the company's official website independently and compare the vacancy and recruiter contact details there.",
+    "Contact the company through a phone number or email published on its official website, not only through the message you received.",
+    "Treat this result as a preliminary screen; a person must make the final decision after independent checks."
+  ],
+  "recommendations": [
+    "Do not pay recruitment fees or share OTPs, passwords, PINs, CVV codes, or bank login details.",
+    "Find the company's official website independently and compare the vacancy and recruiter contact details there.",
+    "Contact the company through a phone number or email published on its official website, not only through the message you received.",
+    "Treat this result as a preliminary screen; a person must make the final decision after independent checks."
+  ],
+  "execution_trace": [
+    {
+      "stage": "plan",
+      "reason": "Planned 6 relevant check(s) from the supplied fields; no user-supplied URL will be fetched."
+    },
+    {
+      "stage": "act_observe",
+      "tool": "payment_language_detector",
+      "reason": "Offer text was supplied; check for money-transfer or recruitment-fee language.",
+      "observation": "2 matching passage(s)",
+      "status": "completed"
+    },
+    {
+      "stage": "act_observe",
+      "tool": "credential_request_detector",
+      "reason": "Offer text was supplied; check for credentials or authentication codes.",
+      "observation": "0 matching passage(s)",
+      "status": "completed"
+    },
+    {
+      "stage": "act_observe",
+      "tool": "urgency_claim_detector",
+      "reason": "Offer text was supplied; check for time pressure and guaranteed-selection claims.",
+      "observation": "4 matching passage(s)",
+      "status": "completed"
+    },
+    {
+      "stage": "act_observe",
+      "tool": "role_completeness_checker",
+      "reason": "Offer text was supplied; assess whether role responsibilities and requirements are described.",
+      "observation": "Structured local inspection completed",
+      "status": "completed"
+    },
+    {
+      "stage": "act_observe",
+      "tool": "email_domain_inspector",
+      "reason": "A recruiter email was supplied; inspect syntax and domain type.",
+      "observation": "Structured local inspection completed",
+      "status": "completed"
+    },
+    {
+      "stage": "act_observe",
+      "tool": "url_structure_inspector",
+      "reason": "A job URL was supplied; inspect URL syntax and hostname without fetching it.",
+      "observation": "Structured local inspection completed",
+      "status": "completed"
+    },
+    {
+      "stage": "decide",
+      "reason": "No further useful distinct local check remains; investigation stopped within the configured call budget."
+    },
+    {
+      "stage": "finalize",
+      "reason": "Final report combines observed local indicators and provider-returned sources only; no source or verification result was inferred."
+    }
+  ],
+  "limitations": [
+    "Local deterministic screening is a preliminary aid, not a calibrated risk model.",
+    "User-supplied job URLs are structurally inspected only and are never fetched.",
+    "Company identity, recruiter ownership, vacancy authenticity, and company registration are not verified.",
+    "A source discovery result, if present, is a candidate for human review and does not authenticate an offer or sender.",
+    "A low score does not prove an offer is genuine; a high score is not a definitive fraud finding.",
+    "Offer content is processed in memory and is not persisted by default.",
+    "This run did not browse the live web because no source results were available; local checks only are shown."
+  ],
+  "human_review_required": true,
+  "input_summary": {
+    "company_name_provided": true,
+    "recruiter_email_provided": true,
+    "job_url_provided": true,
+    "job_text_provided": true,
+    "region_provided": false
+  }
+}

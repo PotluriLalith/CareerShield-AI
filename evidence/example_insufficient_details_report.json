@@ -1,0 +1,81 @@
+{
+  "agent_name": "CareerShield AI",
+  "agent_version": "2.0.0",
+  "report_schema_version": "2.0",
+  "schema_version": "2.0",
+  "report_id": "csr_966e0a0cf266",
+  "generated_at": "2026-10-09T12:30:50Z",
+  "assessment_status": "incomplete",
+  "risk_level": "Needs more information",
+  "heuristic_score": null,
+  "score": null,
+  "score_methodology_version": "1.0",
+  "scoring_method": "Version 1.0 additive deterministic heuristic, capped at 100. Not a probability or fraud verdict.",
+  "verification_status": "local_only",
+  "summary": "There is not enough information to assess this offer. Add the message and at least one useful company, recruiter, or URL detail.",
+  "confidence": "Limited — supplied details only; external ownership is unverified",
+  "findings": [],
+  "signals": [],
+  "sources": [],
+  "tools_used": [],
+  "checks": [],
+  "coverage": {
+    "available_fields": [],
+    "checks_planned": 0,
+    "checks_completed": 0,
+    "tool_call_budget": 8,
+    "tool_calls_used": 0,
+    "live_search_status": "not_configured"
+  },
+  "counter_evidence": [],
+  "contradictions": [],
+  "missing_information": [
+    "Company name",
+    "Recruiter email",
+    "Official company careers page or job URL",
+    "Full job offer/message text"
+  ],
+  "recommended_next_steps": [
+    "Find the company's official website independently and compare the vacancy and recruiter contact details there.",
+    "Contact the company through a phone number or email published on its official website, not only through the message you received.",
+    "Add the missing details to improve screening coverage: Company name, Recruiter email, Official company careers page or job URL, Full job offer/message text.",
+    "Treat this result as a preliminary screen; a person must make the final decision after independent checks."
+  ],
+  "recommendations": [
+    "Find the company's official website independently and compare the vacancy and recruiter contact details there.",
+    "Contact the company through a phone number or email published on its official website, not only through the message you received.",
+    "Add the missing details to improve screening coverage: Company name, Recruiter email, Official company careers page or job URL, Full job offer/message text.",
+    "Treat this result as a preliminary screen; a person must make the final decision after independent checks."
+  ],
+  "execution_trace": [
+    {
+      "stage": "plan",
+      "reason": "Planned 0 relevant check(s) from the supplied fields; no user-supplied URL will be fetched."
+    },
+    {
+      "stage": "decide",
+      "reason": "No further useful distinct local check remains; investigation stopped within the configured call budget."
+    },
+    {
+      "stage": "finalize",
+      "reason": "Final report combines observed local indicators and provider-returned sources only; no source or verification result was inferred."
+    }
+  ],
+  "limitations": [
+    "Local deterministic screening is a preliminary aid, not a calibrated risk model.",
+    "User-supplied job URLs are structurally inspected only and are never fetched.",
+    "Company identity, recruiter ownership, vacancy authenticity, and company registration are not verified.",
+    "A source discovery result, if present, is a candidate for human review and does not authenticate an offer or sender.",
+    "A low score does not prove an offer is genuine; a high score is not a definitive fraud finding.",
+    "Offer content is processed in memory and is not persisted by default.",
+    "This run did not browse the live web because no source results were available; local checks only are shown."
+  ],
+  "human_review_required": true,
+  "input_summary": {
+    "company_name_provided": false,
+    "recruiter_email_provided": false,
+    "job_url_provided": false,
+    "job_text_provided": false,
+    "region_provided": false
+  }
+}

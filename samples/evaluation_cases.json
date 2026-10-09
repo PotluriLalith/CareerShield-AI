@@ -1,0 +1,644 @@
+{
+  "dataset": "CareerShield synthetic evaluation cases",
+  "synthetic_only": true,
+  "cases": [
+    {
+      "id": "payment_request-01",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Pay a registration fee to secure this offer.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-02",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Pay an application fee before the interview.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-03",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Please pay a training fee before onboarding.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-04",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Transfer a processing fee today to continue.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-05",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Pay the security fee to reserve your job.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-06",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Pay an equipment fee before we dispatch your laptop.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-07",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Send money to secure your place on the team.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-08",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Transfer funds to complete the hiring process.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-09",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Pay in bitcoin to confirm this appointment.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "payment_request-10",
+      "synthetic": true,
+      "category": "payment_request",
+      "job_text": "Purchase gift cards and send the codes to the recruiter.",
+      "expected_signals": [
+        "payment_request"
+      ],
+      "forbidden_signals": [
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-01",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Send your OTP to confirm the job offer.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-02",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Please share your password with the hiring manager.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-03",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Provide your PIN to finish identity verification.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-04",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Reply with your one-time password now.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-05",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Submit your bank login details to continue.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-06",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Give us your CVV code for payroll setup.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-07",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Send the passcode from your phone.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-08",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Share your OTP and account password.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-09",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Provide your online banking credentials to receive payment.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "credential_request-10",
+      "synthetic": true,
+      "category": "credential_request",
+      "job_text": "Reply with your PIN to verify the application.",
+      "expected_signals": [
+        "credential_request"
+      ],
+      "forbidden_signals": [
+        "payment_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-01",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Act now; this opportunity closes today.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-02",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Urgent response required within 2 hours.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-03",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Today only: confirm your interview slot.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-04",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Only limited slots remain for this program.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-05",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Respond immediately to keep the application active.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "urgency-06",
+      "synthetic": true,
+      "category": "urgency",
+      "job_text": "Guaranteed job selection without interview.",
+      "expected_signals": [
+        "urgency"
+      ],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-01",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "We never charge any registration fee. Responsibilities include testing services.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-02",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "There is no application fee. The role includes mentoring and code review.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-03",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "Do not pay any training fee; the program is free. Requirements include Python.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-04",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "We will not ask for an OTP or password. You will build internal tools.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-05",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "The company does not request bank logins. The internship supports data analysis.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-06",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "No fee is charged at any stage. Candidates complete two interviews.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-07",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "We never ask applicants to buy gift cards. The position is a software internship.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "benign_negation-08",
+      "synthetic": true,
+      "category": "benign_negation",
+      "job_text": "Applicants should not send their PIN. Duties include maintaining APIs.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-01",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "We have an opportunity. Reply for more details.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-02",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "A role is available in our team. More information will follow.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-03",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "Congratulations on your application. Please wait for an update.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-04",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "Position details are being prepared by our recruiting team.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-05",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "We received your profile and will contact you about next steps.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    },
+    {
+      "id": "ambiguous-06",
+      "synthetic": true,
+      "category": "ambiguous",
+      "job_text": "A hiring manager would like to speak with you soon.",
+      "expected_signals": [],
+      "forbidden_signals": [
+        "payment_request",
+        "credential_request",
+        "instant_offer"
+      ],
+      "forbidden_conclusions": [
+        "definitive_fraud_verdict",
+        "probability_claim"
+      ]
+    }
+  ]
+}

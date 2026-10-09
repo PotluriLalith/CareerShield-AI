@@ -1,0 +1,52 @@
+test_domain_mismatch_is_a_signal_not_proof (test_agent.CareerShieldAgentTests.test_domain_mismatch_is_a_signal_not_proof) ... ok
+test_explicit_no_fee_statement_is_not_flagged_as_payment_request (test_agent.CareerShieldAgentTests.test_explicit_no_fee_statement_is_not_flagged_as_payment_request) ... ok
+test_invalid_email_and_url_are_handled (test_agent.CareerShieldAgentTests.test_invalid_email_and_url_are_handled) ... ok
+test_low_signal_example_does_not_claim_verified (test_agent.CareerShieldAgentTests.test_low_signal_example_does_not_claim_verified) ... ok
+test_missing_information_is_explicit (test_agent.CareerShieldAgentTests.test_missing_information_is_explicit) ... ok
+test_payment_and_urgency_raise_risk (test_agent.CareerShieldAgentTests.test_payment_and_urgency_raise_risk) ... ok
+test_request_for_otp_is_a_high_severity_signal (test_agent.CareerShieldAgentTests.test_request_for_otp_is_a_high_severity_signal) ... ok
+test_agent_obeys_maximum_tool_call_budget (test_enterprise.AgentTests.test_agent_obeys_maximum_tool_call_budget) ... ok
+test_agent_obeys_total_duration_budget (test_enterprise.AgentTests.test_agent_obeys_total_duration_budget) ... ok
+test_agent_report_only_cites_real_provider_return (test_enterprise.AgentTests.test_agent_report_only_cites_real_provider_return) ... ok
+test_ambiguous_and_missing_data_do_not_create_fraud_verdict (test_enterprise.AgentTests.test_ambiguous_and_missing_data_do_not_create_fraud_verdict) ... ok
+test_ats_domain_and_personal_email_are_not_proof (test_enterprise.AgentTests.test_ats_domain_and_personal_email_are_not_proof) ... ok
+test_evidence_redacts_authentication_values (test_enterprise.AgentTests.test_evidence_redacts_authentication_values) ... ok
+test_injection_cannot_select_unregistered_tool_or_exfiltrate (test_enterprise.AgentTests.test_injection_cannot_select_unregistered_tool_or_exfiltrate) ... ok
+test_input_adapts_tool_selection (test_enterprise.AgentTests.test_input_adapts_tool_selection) ... ok
+test_invalid_nonfinite_environment_bound_uses_safe_default (test_enterprise.AgentTests.test_invalid_nonfinite_environment_bound_uses_safe_default) ... ok
+test_report_schema_and_score_disclaimer (test_enterprise.AgentTests.test_report_schema_and_score_disclaimer) ... ok
+test_synthetic_evaluation_fixtures (test_enterprise.AgentTests.test_synthetic_evaluation_fixtures) ... ok
+test_credential_request_detects_multiple_secrets (test_enterprise.ToolTests.test_credential_request_detects_multiple_secrets) ... ok
+test_live_search_unconfigured_is_not_success (test_enterprise.ToolTests.test_live_search_unconfigured_is_not_success) ... ok
+test_negated_and_quoted_fee_text_is_not_a_request (test_enterprise.ToolTests.test_negated_and_quoted_fee_text_is_not_a_request) ... ok
+test_payment_request_is_detected_with_actual_evidence (test_enterprise.ToolTests.test_payment_request_is_detected_with_actual_evidence) ... ok
+test_registry_call_budget_stops_distinct_tools (test_enterprise.ToolTests.test_registry_call_budget_stops_distinct_tools) ... ok
+test_tavily_empty_results_are_not_a_source (test_enterprise.ToolTests.test_tavily_empty_results_are_not_a_source) ... ok
+test_tavily_malformed_provider_response_falls_back (test_enterprise.ToolTests.test_tavily_malformed_provider_response_falls_back) ... ok
+test_tavily_sources_are_only_provider_returned_sources (test_enterprise.ToolTests.test_tavily_sources_are_only_provider_returned_sources) ... ok
+test_tavily_timeout_and_rate_limit_are_explicit (test_enterprise.ToolTests.test_tavily_timeout_and_rate_limit_are_explicit) ... ok
+test_url_inspector_never_fetches_and_labels_url_risks (test_enterprise.ToolTests.test_url_inspector_never_fetches_and_labels_url_risks) ... ok
+test_browser_ui_uses_text_nodes_for_report_data (test_http.CareerShieldHTTPTests.test_browser_ui_uses_text_nodes_for_report_data) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "GET / HTTP/1.1" 200 -
+ok
+test_health_endpoint_and_security_headers (test_http.CareerShieldHTTPTests.test_health_endpoint_and_security_headers) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "GET /health HTTP/1.1" 200 -
+ok
+test_internal_error_does_not_echo_user_input_or_traceback (test_http.CareerShieldHTTPTests.test_internal_error_does_not_echo_user_input_or_traceback) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 500 -
+ok
+test_json_api_rejects_malformed_json_and_unsupported_content_type (test_http.CareerShieldHTTPTests.test_json_api_rejects_malformed_json_and_unsupported_content_type) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 400 -
+127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 415 -
+ok
+test_json_api_rejects_oversized_field (test_http.CareerShieldHTTPTests.test_json_api_rejects_oversized_field) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 413 -
+ok
+test_json_api_rejects_wrong_field_types (test_http.CareerShieldHTTPTests.test_json_api_rejects_wrong_field_types) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 400 -
+ok
+test_json_api_returns_versioned_report (test_http.CareerShieldHTTPTests.test_json_api_returns_versioned_report) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /api/v1/analyze HTTP/1.1" 200 -
+ok
+test_legacy_form_endpoint_remains_compatible (test_http.CareerShieldHTTPTests.test_legacy_form_endpoint_remains_compatible) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "POST /analyze HTTP/1.1" 200 -
+ok
+test_ready_endpoint_reports_configuration_without_secret (test_http.CareerShieldHTTPTests.test_ready_endpoint_reports_configuration_without_secret) ... 127.0.0.1 - - [09/Oct/2026 18:01:59] "GET /ready HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 1.160s
+
+OK
